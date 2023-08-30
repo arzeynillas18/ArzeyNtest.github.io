@@ -48,7 +48,10 @@ body, h1, p {
     font-family: 'DM Serif Display', serif;
     color: #000000;
   }
-  
+  .company-name a{
+    color: #000000;
+    text-decoration: none;
+  }
   /* Centered content in the middle of the page */
   .container {
     max-width: 960px;
