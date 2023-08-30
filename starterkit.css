@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color for the whole page */
+  body {
+    background-image: url("img/SWU\ MAIN\ BLDG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Create a header with a background image */
+  .navbar {
+    background-color: rgba(29, 25, 25, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); 
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  
+  /* Style for the logo and company name in the navbar */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    padding-left: 30px;
+    max-width: 60px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    color: #000000;
+  }
+  
+  /* Centered content in the middle of the page */
+  .container {
+    max-width: 960px;
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 2rem;
+    background-color: rgba(248, 245, 245, 0.8);
+    backdrop-filter: blur(5px); 
+    border-radius: 10px;
+  }
+
+  .content-below-navbar {
+    margin-top: 140px; 
+  }
+  
+ .container h1{
+  font-size: 40px;
+ }
+  
+  /* Style for the main content area */
+  .main-content {
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+    gap: 20px; /* Add gap between grid items */
+    padding-top: 20px;
+  }
+  
+
+.team-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.team-image {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Additional styling for the bullet-list if needed */
+.bullet-list h3 {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.bullet-list ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
+.bullet-list li {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.bullet-list a {
+  color: #000000; /* Change to the desired color using color codes or names */
+  text-decoration: underline; 
+}
+
+.window a:hover,
+.starter a:hover {
+  transform: scale(3.05); /* Increase size on hover */
+  transition: transform 1.2s ease-in-out; /* Add smooth transition */
+}
+/* Add rotation animation to navbar logo on hover */
+.navbar-logo:hover .logo img {
+transform: rotate(360deg); /* Rotate 360 degrees on hover */
+transition: transform 1s ease-in-out; /* Add smooth rotation transition */
+}
+
+
+/* Add pulse animation to footer text on hover */
+.footer h4:hover {
+animation: pulse 1s infinite; /* Apply pulse animation */
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.05); }
+100% { transform: scale(1); }
+}
+
+footer{
+  background-color: #ddd;
+  padding:5px;
+ text-align: center;
+ font-size: 15px;
+}

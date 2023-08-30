@@ -1,0 +1,165 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color for the whole page */
+  body {
+    background-image: url("img/SWU\ MAIN\ BLDG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Create a header with a background image */
+  .navbar {
+    background-color: rgba(29, 25, 25, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); 
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  
+  /* Style for the logo and company name in the navbar */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    padding-left: 30px;
+    max-width: 60px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    color: #000000;
+  }
+  
+  /* Centered content in the middle of the page */
+  .container {
+    max-width: 960px;
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 1rem;
+    background-color: rgba(248, 245, 245, 0.8); 
+    backdrop-filter: blur(5px); 
+    border-radius: 10px;
+  }
+
+  .content-below-navbar {
+    margin-top: 140px; 
+  }
+  
+  /* Left side content */
+  .left-side {
+    padding-bottom: 12px;
+    padding-left:80px ;
+    flex: 1;
+    background-color: transparent;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+  }
+  
+  /* Style for the main content area */
+  .main-content {
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .container a{
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .window a:hover,
+  .starter a:hover {
+    transform: scale(3.05); /* Increase size on hover */
+    transition: transform 1.2s ease-in-out; /* Add smooth transition */
+  }
+  /* Add rotation animation to navbar logo on hover */
+.navbar-logo:hover .logo img {
+  transform: rotate(360deg); /* Rotate 360 degrees on hover */
+  transition: transform 1s ease-in-out; /* Add smooth rotation transition */
+}
+
+
+/* Add pulse animation to footer text on hover */
+.footer h4:hover {
+  animation: pulse 1s infinite; /* Apply pulse animation */
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+  /* Style for each window-like div */
+  .window {
+    background-color:ghostwhite;
+    flex-basis: calc(40% - 5px); 
+    margin-bottom: 20px; 
+    padding: 20px;
+    border: 1px solid #898181;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); 
+    text-align: center;
+  font-size: larger;
+  }
+  
+
+  /* Style for the bottom two windows */
+  .window.bottom {
+    margin-top: 40px; 
+  }
+  
+  /* Adjust image size */
+  .window img {
+    max-width: 70%; 
+    height: auto; 
+  }
+
+  .line {
+    width: 100%; /* Set the width to 100% */
+    height: 1px; /* Set the height to create the line thickness */
+    background-color: #000000; /* Line color */
+    margin: 10px 0; /* Add margin for spacing above and below the line */
+  }
+  
+  .starter {
+    background-color:ghostwhite;
+    text-align: center; /* Center align the contents */
+    border: 1px solid #898181;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+  }
+
+  .starter img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto;
+  }
+
+footer{
+  background-color: #ddd;
+  padding:5px;
+ text-align: center;
+ font-size: 15px;
+}
